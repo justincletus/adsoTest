@@ -9,7 +9,9 @@ let items = [
     destCityCode: 'DEL',
     deptDateTime: '10.00 AM',
     retDateTime: '12.00 PM',
-    flightNumber: 'AI-202'
+    flightNumber: 'AI-202',
+    duration: '2 hours',
+    no_of_stop: 1
   },
   {
     id: 1,
@@ -20,7 +22,9 @@ let items = [
     destCityCode: 'PNQ',
     deptDateTime: '08.00 PM',
     retDateTime: '11.00 PM',
-    flightNumber: 'AI-203'
+    flightNumber: 'AI-203',
+    duration: '2 hours',
+    no_of_stop: 1
   },
   {
     id: 2,
@@ -31,7 +35,9 @@ let items = [
     destCityCode: 'BLR',
     deptDateTime: '07.00 AM',
     retDateTime: '08.00 AM',
-    flightNumber: 'AI-204'
+    flightNumber: 'AI-204',
+    duration: '2 hours',
+    no_of_stop: 1
   },
   {
     id: 3,
@@ -42,7 +48,9 @@ let items = [
     destCityCode: 'HYD',
     deptDateTime: '05.00 PM',
     retDateTime: '06.00 PM',
-    flightNumber: 'AI-205'
+    flightNumber: 'AI-205',
+    duration: '2 hours',
+    no_of_stop: 1
   },
   {
     id: 4,
@@ -53,7 +61,9 @@ let items = [
     destCityCode: 'DEL',
     deptDateTime: '11.00 AM',
     retDateTime: '01.00 PM',
-    flightNumber: '6E-900'
+    flightNumber: '6E-900',
+    duration: '2 hours',
+    no_of_stop: 1
   },
   {
     id: 5,
@@ -64,7 +74,9 @@ let items = [
     destCityCode: 'PNQ',
     deptDateTime: '10.00 PM',
     retDateTime: '12.00 AM',
-    flightNumber: '6E-901'
+    flightNumber: '6E-901',
+    duration: '2 hours',
+    no_of_stop: 1
   },
   {
     id: 6,
@@ -75,7 +87,9 @@ let items = [
     destCityCode: 'BLR',
     deptDateTime: '09.00 AM',
     retDateTime: '10.00 AM',
-    flightNumber: '6E-902'
+    flightNumber: '6E-902',
+    duration: '3 hours',
+    no_of_stop: 1
   },
   {
     id: 7,
@@ -86,7 +100,9 @@ let items = [
     destCityCode: 'HYD',
     deptDateTime: '09.00 PM',
     retDateTime: '10.00 PM',
-    flightNumber: '6E-903'
+    flightNumber: '6E-903',
+    duration: '4 hours',
+    no_of_stop: 4
   },
   {
     id: 8,
@@ -97,7 +113,9 @@ let items = [
     destCityCode: 'DEL',
     deptDateTime: '05.00 AM',
     retDateTime: '07.00 PM',
-    flightNumber: '6E-904'
+    flightNumber: '6E-904',
+    duration: '4 hours',
+    no_of_stop: 2
   },
   {
     id: 9,
@@ -108,7 +126,35 @@ let items = [
     destCityCode: 'BLR',
     deptDateTime: '08.30 PM',
     retDateTime: '10.30 PM',
-    flightNumber: '6E-905'
+    flightNumber: '6E-905',
+    duration: '4 hours',
+    no_of_stop: 2
+  },
+  {
+    id: 10,
+    price: 6500,
+    originCity: 'Bengaluru',
+    originCityCode: 'BLR',
+    destCity: 'Mumbai',
+    destCityCode: 'MUM',
+    deptDateTime: '08.30 PM',
+    retDateTime: '10.30 PM',
+    flightNumber: '6E-910',
+    duration: '4 hours',
+    no_of_stop: 3
+  },
+  {
+    id: 11,
+    price: 6500,
+    originCity: 'Mumbai',
+    originCityCode: 'MUM',
+    destCity: 'Bengaluru',
+    destCityCode: 'BLR',
+    deptDateTime: '08.30 PM',
+    retDateTime: '10.30 PM',
+    flightNumber: '6E-911',
+    duration: '2 hours',
+    no_of_stop: 2
   },
 ];
 

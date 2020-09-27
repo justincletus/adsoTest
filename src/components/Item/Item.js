@@ -8,9 +8,11 @@ let Item = ({ item, children }) => (
     <div className="Item-left">
         <h5>Rs. {item.price}</h5>
         <div>{item.flightNumber}</div>
-        <div className="Item-price">{item.originCityCode} > {item.destCityCode} </div>
+        <div className="Item-price">{item.originCity} -to- {item.destCity} </div>
         <div className="Item-description">Depart: {item.deptDateTime}</div>
         <div className="Item-description">Arrive: {item.retDateTime}</div>
+        <div className="Item-duration">Duration: {item.duration}</div>
+        <div className="Item-no_of_stop">No of Stop: {item.no_of_stop}</div>
     </div>
 
     <div className="Item-right">

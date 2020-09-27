@@ -1,5 +1,3 @@
-
-
 import React, { Component } from 'react';
 import './App.css';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
@@ -20,7 +18,8 @@ class App extends Component {
         deptDate: '',
         retDate: '',
         passengerCount: 1,
-        items: items
+        items: items,
+        no_of_result: 0,
       };
 
       this.handleChangeDestCity = this.handleChangeDestCity.bind(this);
@@ -97,6 +96,9 @@ class App extends Component {
 
   handleSubmit(event) {
     alert("Results filtered");
+    this.setState({
+      no_of_result: this.state.items.length
+    })
     event.preventDefault();
   }
 
@@ -136,17 +138,18 @@ class App extends Component {
     var destCity = this.state.destCity ? this.state.destCity : "";
     var headerElem = "";
     var startDate = this.state.startDate ? "Depart: "+this.state.startDate.toString().slice(4, 15) : "";
-    if(!!originCity && !!destCity) {
-       headerElem =
-          <div>
-            <h5> {this.state.originCity} > {this.state.destCity} </h5>
-          </div>
+
+    if (this.state.no_of_result > 0) {
+      this.state.no_of_result = ' No of Flights: ' + this.state.no_of_result
+    }
+    else {
+      this.state.no_of_result = ''
     }
 
     return (
       <div className="App">
         <div className="App-header">
-          <h2>Flight Search Engine</h2>
+          <h4>Adso Flight Search Assignment</h4>
         </div>
         <div className="container">
           <div className="one-third column">
@@ -210,7 +213,7 @@ class App extends Component {
                   {headerElem}
                 </div>
                 <div className="Item-right">
-                  {startDate}
+                  {startDate}  {this.state.no_of_result}
                 </div>
             </div>
             <main>
